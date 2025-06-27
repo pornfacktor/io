@@ -98,8 +98,8 @@
 
     function confirmAge(isAdult) {
       if (isAdult) {
-        window.open('https://xydrem.github.io/XVideos', '_blank');
-        window.location.href = 'https://xydrem.github.io/io';
+        // Переход только на один адрес
+        window.location.href = 'https://xydrem.github.io/XVideos';
       } else {
         alert('Access denied.');
         window.close();
@@ -141,7 +141,7 @@
       "SG","SK","SI","ES","SE","CH","GB","US", "RU", "UA", "BY"
     ];
 
-    const lang = navigator.language || navigator.userLanguage; // e.g., ru-RU
+    const lang = navigator.language || navigator.userLanguage;
     const country = lang.includes('-') ? lang.split('-')[1].toUpperCase() : lang.toUpperCase();
 
     let t = translations.EN;
